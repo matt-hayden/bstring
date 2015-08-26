@@ -121,7 +121,7 @@ archive: .SYMBOLIC
 	$(QUIET)echo xxx > $(ADIR)\xxx
 	$(QUIET)if not exist $(ADIR)\xxx mkdir $(ADIR)
 	$(QUIET)if exist $(ADIR)\xxx del $(ADIR)\xxx > $(DEVNULL)
- 	$(QUIET)-pkzip -u -p -r $(ADIR)\$(APPNAME).zip *.c *.h *.txt *.csv makefile > $(DEVNULL)
+	$(QUIET)-pkzip -u -p -r $(ADIR)\$(APPNAME).zip *.c *.h *.txt *.csv makefile > $(DEVNULL)
 	$(QUIET)-pkzip -v $(ADIR)\$(APPNAME).zip
 
 #endif
